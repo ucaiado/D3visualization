@@ -434,7 +434,7 @@ d3.csv("ibv.csv", function (data) {
             var format = d3.format("02d");
             return d.dd.getFullYear() + "/" + format((d.dd.getMonth() + 1));
         })
-        .size(1000) // (optional) max number of records to be shown, :default = 25
+        .size(30) // (optional) max number of records to be shown, :default = 25
         // dynamic columns creation using an array of closures
         .columns([
             function (d) {
